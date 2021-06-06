@@ -3,13 +3,16 @@ import time
 import os
 import HandTrackingModule as htm
 
+#webcam setting
 cap = cv2.VideoCapture(2)
 hcam, wcam = 480, 640
 cap.set(3, wcam)
 cap.set(4, hcam)
+#fps parameters
 curTime =  0
 prevTime = 0
 
+#finger Images
 folderPath = "Finger Images"
 myList = os.listdir(folderPath)
 myList.sort()
