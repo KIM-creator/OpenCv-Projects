@@ -27,7 +27,6 @@ while True:
     fps = 1 / (curTime - prevTime)
     prevTime = curTime
 
-
     cv2.putText(img, str(int(fps)), (50, 100), cv2.FONT_HERSHEY_PLAIN, 4, (255, 0, 0), 3)
     cv2.imshow("Output", img)
     if cv2.waitKey(1) & 0xff == ord('q'):
